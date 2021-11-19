@@ -1,8 +1,8 @@
 #ifndef GAME_MODE_VGA_COLOR_H_
 #define GAME_MODE_VGA_COLOR_H_
 
-#define WINDOW_W 640
-#define WINDOW_H 480
+#define WINDOW_W 160 // 640
+#define WINDOW_H 120 // 480
 #define N_TRACK_SEC 10
 #define MAX(a,b) (((a)>(b))?(a):(b))
 

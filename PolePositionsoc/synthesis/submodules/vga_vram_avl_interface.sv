@@ -23,7 +23,7 @@ FGD_R/G/B = Foreground color, flipped with background when Inv bit is set
 
 ************************************************************************/
 `define WINDOW_W 640
-`define WINDOW_H 480
+`define WINDOW_HH 240
 
 module vga_text_avl_interface (
 	// Avalon Clock Input, note this clock is also used for VGA, so this must be 50Mhz
@@ -129,7 +129,7 @@ PlotTrack drawtrack (.pixel_clk(pixel_clk), .DrawX(DrawX), .DrawY(DrawY), .track
 //enum logic [1:0] {setaddr, waitclock, read}
 //handle drawing (may either be combinational or sequential - or both).
 always_comb begin
-	if (DrawY >= 240) isTrack=1'b1;
+	if (DrawY >= `WINDOW_HH) isTrack=1'b1;
 	else isTrack=1'b0;
 end
 //

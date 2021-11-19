@@ -28,7 +28,7 @@ void gameVGAScreenSaver()
 {   
     GameInfo* game = (GameInfo*) malloc(sizeof(GameInfo));
     gameInitGame(game);
-    float fElapsedTime = 1.0 / 60.0;
+    float fElapsedTime = 1.0;
     // clock_t before = clock ();
     while(1) {
         gameVAGScreenGenerater(fElapsedTime, game);

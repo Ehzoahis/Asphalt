@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>2021-11-19 4:27:30</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1637317650847</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>2021-11-19 4:55:34</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1637319334935</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\ENIAC\Desktop\F1_1982\software\F1_1982_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\PolePositionsoc.sopcinfo</SopcDesignFile>

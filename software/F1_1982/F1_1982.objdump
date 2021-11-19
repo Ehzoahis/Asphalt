@@ -35,49 +35,49 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
   8 .debug_aranges 00000b78  00000000  00000000  0000d990  2**3
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_info   00011025  00000000  00000000  0000e508  2**0
+  9 .debug_info   00011023  00000000  00000000  0000e508  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_abbrev 00005cfd  00000000  00000000  0001f52d  2**0
+ 10 .debug_abbrev 00005ceb  00000000  00000000  0001f52b  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_line   000074eb  00000000  00000000  0002522a  2**0
+ 11 .debug_line   000074eb  00000000  00000000  00025216  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_frame  000015a0  00000000  00000000  0002c718  2**2
+ 12 .debug_frame  000015a0  00000000  00000000  0002c704  2**2
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_str    000032d4  00000000  00000000  0002dcb8  2**0
+ 13 .debug_str    000032d4  00000000  00000000  0002dca4  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_loc    0000d4e0  00000000  00000000  00030f8c  2**0
+ 14 .debug_loc    0000d4e0  00000000  00000000  00030f78  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_alt_sim_info 00000010  00000000  00000000  0003e46c  2**2
+ 15 .debug_alt_sim_info 00000010  00000000  00000000  0003e458  2**2
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_ranges 00001338  00000000  00000000  0003e480  2**3
+ 16 .debug_ranges 00001338  00000000  00000000  0003e468  2**3
                   CONTENTS, READONLY, DEBUGGING
- 17 .thread_model 00000003  00000000  00000000  00041f42  2**0
+ 17 .thread_model 00000003  00000000  00000000  00041f2a  2**0
                   CONTENTS, READONLY
- 18 .cpu          0000000c  00000000  00000000  00041f45  2**0
+ 18 .cpu          0000000c  00000000  00000000  00041f2d  2**0
                   CONTENTS, READONLY
- 19 .qsys         00000001  00000000  00000000  00041f51  2**0
+ 19 .qsys         00000001  00000000  00000000  00041f39  2**0
                   CONTENTS, READONLY
- 20 .simulation_enabled 00000001  00000000  00000000  00041f52  2**0
+ 20 .simulation_enabled 00000001  00000000  00000000  00041f3a  2**0
                   CONTENTS, READONLY
- 21 .sysid_hash   00000004  00000000  00000000  00041f53  2**0
+ 21 .sysid_hash   00000004  00000000  00000000  00041f3b  2**0
                   CONTENTS, READONLY
- 22 .sysid_base   00000004  00000000  00000000  00041f57  2**0
+ 22 .sysid_base   00000004  00000000  00000000  00041f3f  2**0
                   CONTENTS, READONLY
- 23 .sysid_time   00000004  00000000  00000000  00041f5b  2**0
+ 23 .sysid_time   00000004  00000000  00000000  00041f43  2**0
                   CONTENTS, READONLY
- 24 .stderr_dev   0000000b  00000000  00000000  00041f5f  2**0
+ 24 .stderr_dev   0000000b  00000000  00000000  00041f47  2**0
                   CONTENTS, READONLY
- 25 .stdin_dev    0000000b  00000000  00000000  00041f6a  2**0
+ 25 .stdin_dev    0000000b  00000000  00000000  00041f52  2**0
                   CONTENTS, READONLY
- 26 .stdout_dev   0000000b  00000000  00000000  00041f75  2**0
+ 26 .stdout_dev   0000000b  00000000  00000000  00041f5d  2**0
                   CONTENTS, READONLY
- 27 .sopc_system_name 0000000f  00000000  00000000  00041f80  2**0
+ 27 .sopc_system_name 0000000f  00000000  00000000  00041f68  2**0
                   CONTENTS, READONLY
- 28 .quartus_project_dir 0000001e  00000000  00000000  00041f8f  2**0
+ 28 .quartus_project_dir 0000001e  00000000  00000000  00041f77  2**0
                   CONTENTS, READONLY
- 29 .jdi          00005606  00000000  00000000  00041fad  2**0
+ 29 .jdi          00005606  00000000  00000000  00041f95  2**0
                   CONTENTS, READONLY
- 30 .sopcinfo     00081b32  00000000  00000000  000475b3  2**0
+ 30 .sopcinfo     00081b32  00000000  00000000  0004759b  2**0
                   CONTENTS, READONLY
 SYMBOL TABLE:
 04000000 l    d  .entry	00000000 .entry
@@ -1181,7 +1181,7 @@ void gameVAGScreenGenerater(float fElapsedTime, GameInfo* game)
  4000680:	e13fee17 	ldw	r4,-72(fp)
  4000684:	4004ae40 	call	4004ae4 <__floatsisf>
  4000688:	1007883a 	mov	r3,r2
- 400068c:	0150dc34 	movhi	r5,17264
+ 400068c:	01509c34 	movhi	r5,17008
  4000690:	1809883a 	mov	r4,r3
  4000694:	4003b240 	call	4003b24 <__divsf3>
  4000698:	1007883a 	mov	r3,r2
@@ -1283,7 +1283,7 @@ void gameVAGScreenGenerater(float fElapsedTime, GameInfo* game)
  40007f0:	40045900 	call	4004590 <__subsf3>
  40007f4:	1007883a 	mov	r3,r2
  40007f8:	1805883a 	mov	r2,r3
- 40007fc:	01510834 	movhi	r5,17440
+ 40007fc:	0150c834 	movhi	r5,17184
  4000800:	1009883a 	mov	r4,r2
  4000804:	40041600 	call	4004160 <__mulsf3>
  4000808:	1007883a 	mov	r3,r2
@@ -1302,7 +1302,7 @@ void gameVAGScreenGenerater(float fElapsedTime, GameInfo* game)
  400083c:	40045900 	call	4004590 <__subsf3>
  4000840:	1007883a 	mov	r3,r2
  4000844:	1805883a 	mov	r2,r3
- 4000848:	01510834 	movhi	r5,17440
+ 4000848:	0150c834 	movhi	r5,17184
  400084c:	1009883a 	mov	r4,r2
  4000850:	40041600 	call	4004160 <__mulsf3>
  4000854:	1007883a 	mov	r3,r2
@@ -1318,7 +1318,7 @@ void gameVAGScreenGenerater(float fElapsedTime, GameInfo* game)
  4000878:	40045900 	call	4004590 <__subsf3>
  400087c:	1007883a 	mov	r3,r2
  4000880:	1805883a 	mov	r2,r3
- 4000884:	01510834 	movhi	r5,17440
+ 4000884:	0150c834 	movhi	r5,17184
  4000888:	1009883a 	mov	r4,r2
  400088c:	40041600 	call	4004160 <__mulsf3>
  4000890:	1007883a 	mov	r3,r2
@@ -1332,7 +1332,7 @@ void gameVAGScreenGenerater(float fElapsedTime, GameInfo* game)
  40008b0:	40045900 	call	4004590 <__subsf3>
  40008b4:	1007883a 	mov	r3,r2
  40008b8:	1805883a 	mov	r2,r3
- 40008bc:	01510834 	movhi	r5,17440
+ 40008bc:	0150c834 	movhi	r5,17184
  40008c0:	1009883a 	mov	r4,r2
  40008c4:	40041600 	call	4004160 <__mulsf3>
  40008c8:	1007883a 	mov	r3,r2
@@ -1348,7 +1348,7 @@ void gameVAGScreenGenerater(float fElapsedTime, GameInfo* game)
  40008ec:	400365c0 	call	400365c <__addsf3>
  40008f0:	1007883a 	mov	r3,r2
  40008f4:	1805883a 	mov	r2,r3
- 40008f8:	01510834 	movhi	r5,17440
+ 40008f8:	0150c834 	movhi	r5,17184
  40008fc:	1009883a 	mov	r4,r2
  4000900:	40041600 	call	4004160 <__mulsf3>
  4000904:	1007883a 	mov	r3,r2
@@ -1367,7 +1367,7 @@ void gameVAGScreenGenerater(float fElapsedTime, GameInfo* game)
  4000934:	400365c0 	call	400365c <__addsf3>
  4000938:	1007883a 	mov	r3,r2
  400093c:	1805883a 	mov	r2,r3
- 4000940:	01510834 	movhi	r5,17440
+ 4000940:	0150c834 	movhi	r5,17184
  4000944:	1009883a 	mov	r4,r2
  4000948:	40041600 	call	4004160 <__mulsf3>
  400094c:	1007883a 	mov	r3,r2
@@ -1454,7 +1454,7 @@ void gameVAGScreenGenerater(float fElapsedTime, GameInfo* game)
         vga_ctrl -> VRAM[y + WINDOW_H / 2] =  nClipColour << 31 | nRightClip << 10 | nRightGrass;
  4000a64:	d0e00017 	ldw	r3,-32768(gp)
  4000a68:	e0bfee17 	ldw	r2,-72(fp)
- 4000a6c:	10803c04 	addi	r2,r2,240
+ 4000a6c:	10800f04 	addi	r2,r2,60
  4000a70:	e13ff907 	ldb	r4,-28(fp)
  4000a74:	200a97fa 	slli	r5,r4,31
  4000a78:	e13ff717 	ldw	r4,-36(fp)
@@ -1476,7 +1476,7 @@ void gameVAGScreenGenerater(float fElapsedTime, GameInfo* game)
  4000aa0:	10800044 	addi	r2,r2,1
  4000aa4:	e0bfee15 	stw	r2,-72(fp)
  4000aa8:	e0bfee17 	ldw	r2,-72(fp)
- 4000aac:	10803c10 	cmplti	r2,r2,240
+ 4000aac:	10800f10 	cmplti	r2,r2,60
  4000ab0:	103ef31e 	bne	r2,zero,4000680 <__alt_data_end+0xfc000680>
         // int nRoadColour = (nTrackSection-1) == 0 ? FG_WHITE : FG_GREY;
         
@@ -4751,15 +4751,15 @@ void main() {
  4003d00:	04003c58 	cmpnei	r16,zero,241
  4003d04:	04003c58 	cmpnei	r16,zero,241
  4003d08:	04003ea4 	muli	r16,zero,250
- 4003d0c:	04003c40 	call	4003c4 <__alt_mem_sdram-0x3bffc3c>
+ 4003d0c:	04003c40 	call	4003c4 <__reset-0x3bffc3c>
  4003d10:	04003ea4 	muli	r16,zero,250
  4003d14:	04003da0 	cmpeqi	r16,zero,246
  4003d18:	04003ea4 	muli	r16,zero,250
- 4003d1c:	04003c40 	call	4003c4 <__alt_mem_sdram-0x3bffc3c>
+ 4003d1c:	04003c40 	call	4003c4 <__reset-0x3bffc3c>
  4003d20:	04003c58 	cmpnei	r16,zero,241
  4003d24:	04003c58 	cmpnei	r16,zero,241
  4003d28:	04003da0 	cmpeqi	r16,zero,246
- 4003d2c:	04003c40 	call	4003c4 <__alt_mem_sdram-0x3bffc3c>
+ 4003d2c:	04003c40 	call	4003c4 <__reset-0x3bffc3c>
  4003d30:	04003eb4 	movhi	r16,250
  4003d34:	04003eb4 	movhi	r16,250
  4003d38:	04003eb4 	movhi	r16,250
@@ -7022,9 +7022,9 @@ void main() {
  4006024:	04006218 	cmpnei	r16,zero,392
  4006028:	04006230 	cmpltui	r16,zero,392
  400602c:	0400605c 	xori	r16,zero,385
- 4006030:	04006240 	call	400624 <__alt_mem_sdram-0x3bff9dc>
- 4006034:	04006240 	call	400624 <__alt_mem_sdram-0x3bff9dc>
- 4006038:	04006240 	call	400624 <__alt_mem_sdram-0x3bff9dc>
+ 4006030:	04006240 	call	400624 <__reset-0x3bff9dc>
+ 4006034:	04006240 	call	400624 <__reset-0x3bff9dc>
+ 4006038:	04006240 	call	400624 <__reset-0x3bff9dc>
  400603c:	040065a0 	cmpeqi	r16,zero,406
  4006040:	2404b03a 	or	r2,r4,r16
  4006044:	1000711e 	bne	r2,zero,400620c <__muldf3+0x300>
@@ -12910,13 +12910,13 @@ alt_exception_cause_generated_bad_addr(alt_exception_cause cause)
  400a084:	0400a0c8 	cmpgei	r16,zero,643
  400a088:	0400a0c8 	cmpgei	r16,zero,643
  400a08c:	0400a0b8 	rdprs	r16,zero,642
- 400a090:	0400a0c0 	call	400a0c <__alt_mem_sdram-0x3bff5f4>
+ 400a090:	0400a0c0 	call	400a0c <__reset-0x3bff5f4>
  400a094:	0400a0c8 	cmpgei	r16,zero,643
  400a098:	0400a0b8 	rdprs	r16,zero,642
  400a09c:	0400a0b8 	rdprs	r16,zero,642
  400a0a0:	0400a0c8 	cmpgei	r16,zero,643
  400a0a4:	0400a0b8 	rdprs	r16,zero,642
- 400a0a8:	0400a0c0 	call	400a0c <__alt_mem_sdram-0x3bff5f4>
+ 400a0a8:	0400a0c0 	call	400a0c <__reset-0x3bff5f4>
  400a0ac:	0400a0c8 	cmpgei	r16,zero,643
  400a0b0:	0400a0c8 	cmpgei	r16,zero,643
  400a0b4:	0400a0b8 	rdprs	r16,zero,642

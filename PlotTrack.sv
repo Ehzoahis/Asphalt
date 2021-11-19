@@ -1,6 +1,6 @@
-`define WINDOW_W 480
-`define WINDOW_H 640
-`define SCALE 2
+`define WINDOW_HH 60 // 240
+`define WINDOW_W 160 // 640
+`define SCALE 2 // 0
 
 module PlotTrack	(
 				input pixel_clk,
@@ -15,34 +15,37 @@ module PlotTrack	(
 	);
 
 enum logic [3:0] {Far, GrassL, BumpL, Road, BumpR, GrassR} cur_sec, next_sec;	
+logic [9:0] DrawXS, DrawYS;
+assign DrawXS = DrawX >> `SCALE;
+assign DrawYS = DrawY >> `SCALE;
 
 always_ff @ (posedge pixel_clk) begin
 	if (~isTrack) cur_sec <= Far;
-	else if (DrawX == 0 & isTrack) cur_sec <= GrassL;
+	else if (DrawXS == 0 & isTrack) cur_sec <= GrassL;
 	else cur_sec <= next_sec;
 end
 	
 always_comb	begin
 	next_sec = cur_sec;
 	unique case (cur_sec)
-		GrassL	: if (DrawX >= track[19:10])	next_sec = BumpL;
-		BumpL		: if (DrawX >= track[9:0])	next_sec = Road;
-		Road		: if (DrawX >= track[19:10])	next_sec = BumpR;
-		BumpR		: if (DrawX >= track[9:0])	next_sec = GrassR;
-		GrassR	: if (DrawX >= 640)	next_sec = GrassL;
+		GrassL	: if (DrawXS >= track[19:10])	next_sec = BumpL;
+		BumpL		: if (DrawXS >= track[9:0])	next_sec = Road;
+		Road		: if (DrawXS >= track[19:10])	next_sec = BumpR;
+		BumpR		: if (DrawXS >= track[9:0])	next_sec = GrassR;
+		GrassR	: if (DrawXS >= `WINDOW_W)	next_sec = GrassL;
 		Far		: next_sec = GrassL;
 		default: ;
 	endcase
 		
 	unique case (next_sec)
 		GrassL	: 	begin
-							if (DrawX >= 640) vram_addr = DrawY-239;
-							else vram_addr = DrawY-240;
+							if (DrawXS >= `WINDOW_W) vram_addr = DrawYS-`WINDOW_HH+1;
+							else vram_addr = DrawYS-`WINDOW_HH;
 						end
-		BumpL		: vram_addr = DrawY-240;
-		Road		: vram_addr = DrawY;
-		BumpR		: vram_addr = DrawY;
-		GrassR	: vram_addr = DrawY;
+		BumpL		: vram_addr = DrawYS-`WINDOW_HH;
+		Road		: vram_addr = DrawYS;
+		BumpR		: vram_addr = DrawYS;
+		GrassR	: vram_addr = DrawYS;
 		default	: vram_addr = 9'hXXX;
 	endcase
 		
