@@ -123,9 +123,12 @@ logic isTrack;
 logic [31:0] track;
 
 
-PlotTrack drawtrack (.pixel_clk(pixel_clk), .DrawX(DrawX), .DrawY(DrawY), .track(readout_buffer), .isTrack(isTrack),
-								.red(track_R), .green(track_G), .blue(track_B), .vram_addr(vram_addr));
+//PlotTrack drawtrack (.pixel_clk(pixel_clk), .DrawX(DrawX), .DrawY(DrawY), .track(readout_buffer), .isTrack(isTrack),
+//								.red(track_R), .green(track_G), .blue(track_B), .vram_addr(vram_addr));
 
+PlotTrackv2 drawtrack (.pixel_clk(pixel_clk), .DrawX(DrawX), .DrawY(DrawY), .track(readout_buffer), .isTrack(isTrack),
+								.red(track_R), .green(track_G), .blue(track_B));
+assign vram_addr = DrawY;
 //enum logic [1:0] {setaddr, waitclock, read}
 //handle drawing (may either be combinational or sequential - or both).
 always_comb begin

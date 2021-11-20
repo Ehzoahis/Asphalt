@@ -78,11 +78,15 @@ void gameVAGScreenGenerater(float fElapsedTime, GameInfo* game)
         // track curvature.
         float fMiddlePoint = 0.5 + game->fCurvature * powf((1.0 - fPerspective), 3);
 
+        int nMiddlePoint = fMiddlePoint * WINDOW_W;
+        int nRoadWidth = fRoadWidth * WINDOW_W;
+        int nClipWidth = fClipWidth * WINDOW_W;
+
         // Work out segment boundaries
-        int nLeftGrass = MAX((fMiddlePoint - fRoadWidth - fClipWidth) * WINDOW_W, 0);
-        int nLeftClip = MAX((fMiddlePoint - fRoadWidth) * WINDOW_W, 0);
-        int nRightClip = (fMiddlePoint + fRoadWidth) * WINDOW_W;
-        int nRightGrass = (fMiddlePoint + fRoadWidth + fClipWidth) * WINDOW_W;
+        // int nLeftGrass = MAX((fMiddlePoint - fRoadWidth - fClipWidth) * WINDOW_W, 0);
+        // int nLeftClip = MAX((fMiddlePoint - fRoadWidth) * WINDOW_W, 0);
+        // int nRightClip = (fMiddlePoint + fRoadWidth) * WINDOW_W;
+        // int nRightGrass = (fMiddlePoint + fRoadWidth + fClipWidth) * WINDOW_W;
         
         // int nRow = WINDOW_H / 2;
 
@@ -93,8 +97,8 @@ void gameVAGScreenGenerater(float fElapsedTime, GameInfo* game)
         
         // // Start finish straight changes the road colour to inform the player lap is reset
         // int nRoadColour = (nTrackSection-1) == 0 ? FG_WHITE : FG_GREY;
-        
-        vga_ctrl -> VRAM[y] = nClipColour << 31 | nLeftGrass << 10 | nLeftClip;
-        vga_ctrl -> VRAM[y + WINDOW_H / 2] =  nClipColour << 31 | nRightClip << 10 | nRightGrass;
+        vga_ctrl -> VRAM[y + WINDOW_H / 2] = nClipColour << 31 | nMiddlePoint << 20 | nRoadWidth << 10 | nClipWidth;
+        // vga_ctrl -> VRAM[y] = nClipColour << 31 | nLeftGrass << 10 | nLeftClip;
+        // vga_ctrl -> VRAM[y + WINDOW_H / 2] =  nClipColour << 31 | nRightClip << 10 | nRightGrass;
     }
 }

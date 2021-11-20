@@ -1,8 +1,8 @@
 #ifndef GAME_MODE_VGA_COLOR_H_
 #define GAME_MODE_VGA_COLOR_H_
 
-#define WINDOW_W 160 // 640
-#define WINDOW_H 120 // 480
+#define WINDOW_W 640
+#define WINDOW_H 480
 #define N_TRACK_SEC 10
 #define MAX(a,b) (((a)>(b))?(a):(b))
 
@@ -10,7 +10,7 @@
 #include <alt_types.h>
 
 struct GAME_VGA_STRUCT {
-	alt_u32 VRAM [WINDOW_H / 2 * 2]; 
+	alt_u32 VRAM [WINDOW_H]; 
 };
 
 struct TRACK {
