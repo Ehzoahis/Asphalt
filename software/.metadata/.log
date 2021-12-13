@@ -1,0 +1,902 @@
+!SESSION 2021-12-10 00:01:51.979 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2021-12-10 00:02:00.998
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-10 00:02:38.943
+!MESSAGE Indexed 'Asphalt_bsp' (84 sources, 159 headers) in 2.32 sec: 5,463 declarations; 8,865 references; 18 unresolved inclusions; 2 syntax errors; 51 unresolved names (0.35%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-10 00:02:39.512
+!MESSAGE Indexed 'Asphalt' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.altera.sbtgui.core 4 0 2021-12-10 00:05:20.173
+!MESSAGE Error executing 'nios2-bsp-generate-files --bsp-dir . --settings settings.bsp', unexpected return code 1.
+
+Error message:
+
+SEVERE: File not found: ..\..\lab62soc.sopcinfo
+SEVERE: File not found: ..\..\lab62soc.sopcinfo
+SEVERE: nios2-bsp-generate-files failed.
+
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-10 00:06:47.046
+!MESSAGE Indexed 'Asphalt_bsp' (84 sources, 138 headers) in 1.07 sec: 3,948 declarations; 6,940 references; 78 unresolved inclusions; 6 syntax errors; 152 unresolved names (1.4%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-10 00:06:48.072
+!MESSAGE Indexed 'Asphalt' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:08:21.609
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:08:23.954
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:08:50.206
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:08:52.547
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:09:31.608
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:09:32.306
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:09:34.597
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:31:22.522
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:31:23.239
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:31:25.568
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:32:05.547
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:32:07.898
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:32:54.523
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:32:56.871
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:38:21.347
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:38:23.661
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:44:57.930
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:45:00.247
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:56:07.792
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:56:10.099
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:56:40.989
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 00:56:43.321
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 01:03:50.996
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 01:03:53.269
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 01:11:46.861
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 01:11:49.164
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 01:12:14.587
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 01:12:16.867
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:14:53.690
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:14:54.519
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:14:56.843
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:15:13.609
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:15:14.286
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:15:16.624
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:29:38.224
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:29:40.536
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:29:59.064
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:30:01.396
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:39:04.828
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:39:07.443
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:49:21.087
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:49:23.417
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:53:36.314
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:53:38.630
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:53:53.629
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:53:54.354
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:53:56.708
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:54:18.729
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:54:19.425
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:54:21.761
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:54:43.433
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:54:45.713
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:59:32.308
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:59:34.595
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:59:53.137
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 02:59:55.431
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 11:05:44.190
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 11:05:45.021
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 11:05:47.326
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 17:28:42.038
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 17:28:44.351
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 20:14:13.214
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 20:14:16.906
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+!SESSION 2021-12-10 20:15:07.502 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2021-12-10 20:15:23.543
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 20:16:12.378
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-10 20:16:14.797
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 01:55:22.247
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 01:55:24.598
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:30:39.220
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:30:41.515
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:36:03.566
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:36:05.845
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:45:40.371
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:45:42.694
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:46:08.876
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:46:09.595
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:46:11.928
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:46:28.714
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:46:29.428
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:46:31.773
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:54:17.707
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:54:19.992
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:54:35.679
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:54:36.347
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:54:38.685
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:55:06.720
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:55:07.450
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 02:55:09.774
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 03:05:07.053
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 03:05:09.320
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 03:05:24.137
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 03:05:24.907
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 03:05:27.237
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 03:13:19.980
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 03:13:22.278
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 03:13:39.965
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 03:13:40.686
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 03:13:43.036
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 03:14:07.242
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 03:14:08.037
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 03:14:10.381
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 12:21:12.723
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 12:21:15.027
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 12:21:34.375
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 12:21:35.095
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 12:21:37.390
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:30:49.272
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:30:51.575
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:32:27.059
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:32:29.382
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:36:33.410
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:36:35.686
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:47:06.500
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:47:08.972
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:51:32.742
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:51:35.038
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:51:51.393
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:51:52.082
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:51:54.406
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:52:09.838
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:52:10.557
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:52:12.872
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:55:36.598
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 16:55:38.879
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 17:03:55.432
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 17:03:57.726
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 17:26:03.061
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 17:26:05.352
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 17:52:28.888
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 17:52:31.182
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 18:19:23.245
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 18:19:25.529
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 19:11:19.849
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 19:11:22.325
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 19:24:15.706
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 19:24:17.999
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 21:01:08.346
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 21:01:09.066
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 21:01:11.386
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 21:09:48.306
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 21:09:50.586
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 21:31:46.862
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-11 21:31:49.177
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 00:02:46.201
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 00:02:48.519
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 00:10:56.505
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 00:10:58.783
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:39:56.888
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:39:59.154
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:40:16.894
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:40:17.567
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:40:21.167
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:41:02.867
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:41:05.146
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:41:23.940
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:41:24.678
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:41:27.042
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:41:57.909
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:42:00.199
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:53:44.238
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:53:46.559
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:54:08.638
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:54:10.900
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:54:28.475
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:54:29.211
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:54:31.503
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:59:01.795
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 01:59:04.064
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 02:53:44.894
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 02:53:47.197
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 03:04:36.405
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 03:04:38.682
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 03:06:08.469
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 03:06:10.737
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 03:15:37.837
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 03:15:40.126
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 03:36:23.131
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 03:36:25.406
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 03:40:33.229
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 03:40:35.528
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 03:49:14.719
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 03:49:17.008
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 04:00:58.969
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 04:01:01.277
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 04:01:19.609
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 04:01:20.328
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 04:01:22.630
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 04:12:00.413
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 04:12:02.709
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 04:25:12.161
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 04:25:14.450
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 04:25:33.845
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 04:25:34.537
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 04:25:36.844
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 04:47:11.062
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 04:47:13.463
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:00:22.218
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:00:24.510
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:07:46.904
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:07:49.178
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:08:42.242
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:08:42.974
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:08:45.312
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:10:04.465
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:10:06.756
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:15:05.520
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:15:07.774
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:15:23.819
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:15:24.536
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:15:26.868
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:21:09.233
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:21:11.755
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:37:24.754
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:37:27.055
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:38:12.718
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:38:13.415
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:38:15.731
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:38:33.399
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:38:34.106
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:38:36.433
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:55:52.045
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 05:55:54.328
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:00:40.923
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:00:43.214
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:05:17.188
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:05:19.480
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:05:42.589
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:05:43.306
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:05:45.565
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:06:11.605
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:06:12.303
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:06:14.594
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:44:58.431
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:45:00.737
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:45:15.728
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:45:16.460
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:45:18.765
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:45:38.375
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:45:39.095
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 06:45:41.389
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 15:18:19.336
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 15:18:21.823
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 15:34:46.926
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 15:34:47.635
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 15:34:49.958
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 15:48:29.474
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 15:48:31.868
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 15:48:52.662
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 15:48:53.333
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 15:49:00.191
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 15:56:36.015
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 15:56:38.307
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 16:03:16.903
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 16:03:19.210
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 16:19:28.826
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 16:19:31.122
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 16:19:55.241
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 16:19:55.963
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 16:19:58.244
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 16:24:50.419
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 16:24:52.716
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 16:40:07.201
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 16:40:09.480
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 18:24:45.642
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 18:24:48.026
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 18:32:56.446
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 18:32:58.759
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 18:38:03.189
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 18:38:05.651
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 18:43:31.635
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 18:43:34.079
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 18:43:53.802
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 18:43:54.529
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 18:43:56.842
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 18:44:16.757
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 18:44:17.474
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x80011f0 --id=0x0 --timestamp=1639115147]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-12 18:44:19.802
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x80011f0 --id=0x0 --timestamp=1639115147 /cygdrive/c/Users/ENIAC/Desktop/Asphalt/software/Asphalt/Asphalt.elf]

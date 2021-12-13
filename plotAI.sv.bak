@@ -1,0 +1,5 @@
+module plotAI (	input clk,
+							input [9:0] PlayerX, PlayerY,
+							input [9:0] DrawX, DrawY,
+							output logic isPlayer,
+							output logic [7:0] Red, Green, Blue);

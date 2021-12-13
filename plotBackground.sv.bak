@@ -1,0 +1,3 @@
+module plotBackground ( input [9:0] DrawX, DrawY,
+								input [9:0]	Distance,
+								input	[]

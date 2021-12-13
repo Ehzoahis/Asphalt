@@ -1,0 +1,9 @@
+18:44:15 **** Incremental Build of configuration Nios II for project Asphalt ****
+make all 
+Info: Building ../Asphalt_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Asphalt_bsp/
+[BSP build complete]
+[Asphalt build complete]
+
+18:44:16 Build Finished (took 802ms)
+
