@@ -171,15 +171,6 @@ logic Reset_h, vssig, blank, sync, pixel_clk;
 		);
 	
 
-//	ball ball0 (
-//		.Reset			(Reset_h),
-//		.frame_clk		(VGA_VS),
-//		.keycode			(keycode),
-//		.BallX			(ballxsig),
-//		.BallY			(ballysig),
-//		.BallS			(ballsizesig)
-//		);
-//	
 	color_mapper cm0 (
 		.Reset			(Reset_h),
 		.DrawX			(drawxsig),

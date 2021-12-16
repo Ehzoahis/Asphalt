@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sun Dec 12 18:42:08 2021
+Analysis & Synthesis Status : Successful - Wed Dec 15 19:08:47 2021
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Asphalt
 Top-level Entity Name : Asphalt_gametop
 Family : MAX 10
-Total logic elements : 5,989
-    Total combinational functions : 5,005
+Total logic elements : 5,985
+    Total combinational functions : 5,001
     Dedicated logic registers : 2,685
 Total registers : 2685
 Total pins : 141

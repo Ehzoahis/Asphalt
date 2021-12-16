@@ -76,7 +76,7 @@ always_ff @ (posedge Reset or posedge frame_clk) begin
 		GameWin <= 1'b0;
 		GameLose <= 1'b1;
 	end
-	else if (TarDistance <= 65 && ~ww) begin
+	else if (TarDistance <= 65 && ~GameLose) begin
 		GameStart <= GameStart;
 		GameWin <= 1'b1;
 		GameLose <= 1'b0;
